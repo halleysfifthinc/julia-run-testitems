@@ -404,6 +404,7 @@ runs:
         "results-path=$resultsFile" >> $env:GITHUB_OUTPUT
         "junit-path=$env:TEST_JUNIT_PATH" >> $env:GITHUB_OUTPUT
         "coverage-cobertura-path=$env:TEST_COVERAGE_COBERTURA" >> $env:GITHUB_OUTPUT
+        exit 0
       shell: pwsh
       env:
         # Also set when the toolkit is only being loaded, not built: the slug is computed
